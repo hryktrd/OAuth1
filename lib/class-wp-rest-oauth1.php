@@ -779,8 +779,8 @@ class WP_REST_OAuth1 {
 		if ( empty( $used_nonces ) )
 			$used_nonces = array();
 
-		if ( in_array( $nonce, $used_nonces ) )
-			return new WP_Error( 'json_oauth1_nonce_already_used', __( 'Invalid nonce - nonce has already been used', 'rest_oauth1' ), array( 'status' => 401 ) );
+//		if ( in_array( $nonce, $used_nonces ) )
+//			return new WP_Error( 'json_oauth1_nonce_already_used', __( 'Invalid nonce - nonce has already been used', 'rest_oauth1' ), array( 'status' => 401 ) );
 
 		$used_nonces[ $timestamp ] = $nonce;
 		
